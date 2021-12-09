@@ -1294,7 +1294,7 @@ catlo(download1)
            {title: 'on', description: "", rowId: `on`},
            {title: 'off', description: "", rowId: `off`}]
           section = [{title: "ⁱᵗˢᵐᵉʙᴇʟᴄᴏ𝓼𝓮𝓻♔︎", rows: rows}]
-          button = {buttonText: 'SELECT', description: `*Gʀᴏᴜᴘ [ᴏᴘᴇɴ/ᴄʟᴏsᴇ]*\n*Dɪsᴀᴘᴘᴇᴀʀ Mᴇsᴀᴀɢᴇ [ᴏɴ/ᴏғғ]*`,
+          button = {buttonText: 'SELECT', description: `╭─➤𝐆𝐑𝐎𝐔𝐏 𝐒𝐓𝐍𝐆𝐒•──» \n│❖ ᴏᴡɴᴇʀ : *_ɴɪʜᴀʟ_ \n│❖ ʙᴏᴛ ɴᴀᴍᴇ : *ᗷᗴᒪᑕO𝓼𝓮𝓻♔︎¹⁰* \n╰───────────────❋۪۪ \n╭───────────────❋۪۪ \n│         ☆ *𝙶𝙴𝙾𝚄𝙿* ☆ \n│❖ :  [ ᴏᴘᴇɴ / ᴄʟᴏsᴇ]  \n│ \n│     ☆ *𝙳𝙸𝚂𝙰𝙿𝙿𝙴𝙰𝚁* ☆ \n│❖ :  [ ᴏɴ / ᴏғғ ] \n╰───────────────❋۪ \n ©ᴀᴍ ʙᴇʟᴄᴏ sᴇʀ ♔︎`,
           sections: section, listType: 1}
           bosco.sendMessage(from, button, MessageType.listMessage, {quoted: ftroli})
                     break
@@ -1345,7 +1345,7 @@ const btnbc = {
     buttons: buttonss,
     headerType: 1
 }
-await bosco.sendMessage(_.jid, btnbc, MessageType.buttonsMessage, [sender]},})
+await bosco.sendMessage(_.jid, btnbc, MessageType.buttonsMessage, {quoted: ftrol})
 						}
 						reply(`sᴜᴄᴄᴜss ʙʀᴏᴀᴅᴄᴀsᴛ sᴇɴᴅᴇᴅ ᴀʟʟ ɢʀᴏᴜᴘs...✔︎:\n${body.slice(4)}`)
 					}
