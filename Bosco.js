@@ -1345,7 +1345,7 @@ const btnbc = {
     buttons: buttonss,
     headerType: 1
 }
-await bosco.sendMessage(_.jid, btnbc, MessageType.buttonsMessage, {quoted: ftrol})
+await bosco.sendMessage(_.jid, btnbc, MessageType.buttonsMessage, [sender]},})
 						}
 						reply(`sᴜᴄᴄᴜss ʙʀᴏᴀᴅᴄᴀsᴛ sᴇɴᴅᴇᴅ ᴀʟʟ ɢʀᴏᴜᴘs...✔︎:\n${body.slice(4)}`)
 					}
