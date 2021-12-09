@@ -42,7 +42,7 @@ nocache('../message/help.js', module => console.log(color('[WATCH]', 'cyan'), co
     const starts = async (bosco = new WAConnection()) => {
     bosco.version = [3,3234,9]
 	bosco.logger.level = 'warn'
-	console.log(color(figlet.textSync('KRIZ SER OFC', {
+	console.log(color(figlet.textSync('BELCO SER OFC', {
 		font: 'Standard',
 		horizontalLayout: 'default',
 		vertivalLayout: 'default',
@@ -92,14 +92,14 @@ nocache('../message/help.js', module => console.log(color('[WATCH]', 'cyan'), co
 		global.batrei.push(batterylevel)
 	})
 	
-	  // Call Block
-	/*bosco.on('CB:action,,call', async json => {
+	// Call Block
+	bosco.on('CB:action,,call', async json => {
         const callerId = json[2][0][1].from;
         console.log("caller "+ callerId)
         bosco.sendMessage(callerId, "Call = BLOCK!!\nDont call me!!", MessageType.text)
         await sleep(3000)
         await bosco.blockUser(callerId, "add") // Block user
-   })*/
+   })
    
    bosco.on('message-delete', async (m) => {
    	await m(m)
