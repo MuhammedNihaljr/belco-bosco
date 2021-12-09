@@ -1334,15 +1334,8 @@ catlo(download1)
 						const encmedia = isQuotedVideo ? JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo : mek
 						buff = await bosco.downloadMediaMessage(encmedia)
 						for (let _ of anu) {
-							bisco.sendMessage(_.jid, buff, video, { mimetype: Mimetype.gif, quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {})}, message: { orderMessage: { itemCount: 101010, status: 200, thumbnail: fs.readFileSync('./ds.jpg'), surface: 200, message: `Broadcast`, orderTitle: `Broadcast`, sellerJid: '0@s.whatsapp.net'}}}, contextInfo: { forwardingScore: 508, isForwarded: true}, caption: `${body.slice(4)}` })
+							bosco.sendMessage(_.jid, buff, video, { mimetype: Mimetype.gif, quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {})}, message: { orderMessage: { itemCount: 101010, status: 200, thumbnail: fs.readFileSync('./ds.jpg'), surface: 200, message: `Broadcast`, orderTitle: `Broadcast`, sellerJid: '0@s.whatsapp.net'}}}, contextInfo: { forwardingScore: 508, isForwarded: true}, caption: `${body.slice(4)}` })
 						}
-						reply(`Broadcast success ${body.slice(4)}`)
-					} else {
-						for (let _ of anu) {
-							sendMess(_.jid, `${body.slice(4)}`)
-						}
-						reply(`Broadcast success:\n${body.slice(4)}`)
-					}
 buttonss = [{buttonId: `menu`, buttonText: {displayText: 'ᴍᴇɴᴜ🎗️'}, type: 1},{buttonId: `alive`, buttonText: {displayText: 'ᴀʟɪᴠᴇ💝'}, type: 1}]
 const btnbc = {
     contentText: `${body.slice(4)}`,
