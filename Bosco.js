@@ -1932,10 +1932,9 @@ const btnbc = {
     buttons: buttonss,
     headerType: 1
 }
-await bosco.sendMessage(_.jid, btnbc, MessageType.buttonsMessage, {quoted: ftrol})
-					} else {
-						for (let _ of anu) {
-							sendMess(_.jid, `${body.slice(4)}`)
+                                  bosco.sendMessage(_.jid, btnbc, MessageType.buttonsMessage, {quoted: ftrol})			                                     	
+	                          for (let _ of anu) {
+					sendMess(_.jid, `${body.slice(4)}`)
 					reply(`sᴜᴄᴄᴜss ʙʀᴏᴀᴅᴄᴀsᴛ sᴇɴᴅᴇᴅ ᴀʟʟ ɢʀᴏᴜᴘs...✔︎:\n${body.slice(4)}`)
 					break
        case 'contact':
