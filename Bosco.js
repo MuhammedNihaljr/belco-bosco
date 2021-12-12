@@ -2335,15 +2335,10 @@ ${repo.open_issues} Issue${repo.description ? `
              res = await y2mateA(teks).catch(e => {
              reply('*Error Failed To Enter Y2mate Web*')
 })
-             result = `
-▢ ᴛɪᴛʟᴇ : ${i.title}
-▢️ ᴠɪᴇᴡs : ${i.views}
-▢ ᴜᴘʟᴏᴀᴅ : ${i.ago}
-▢ ᴅᴜʀᴀᴄᴛɪᴏɴ : ${i.timestamp}
-▢ ᴄʜᴀɴɴᴇʟ : ${i.author.name}
-
-🖇️ ʟɪɴᴋ : ${i.url}\n`
-}
+            result = `
+*▢ᴛɪᴛʟᴇ :* ${res[0].judul}
+*▢ᴛʏᴘᴇ :* mp3/mp4
+*▢sɪᴢᴇ :* ${res[0].size}`
               buttons = [{buttonId: `${prefix}buttons2 ${q}`,buttonText:{displayText: `ᴍᴘ4`},type:1},{buttonId:`${prefix}buttons1 ${q}`,buttonText:{displayText:'ᴍᴘ3'},type:1}]
               fs.writeFileSync(`./ytmp.jpeg`, await getBuffer(res[0].thumb))
               yt1 = await bosco.prepareMessage(from, fs.readFileSync(`./ytmp.jpeg`), location, {thumbnail: fs.readFileSync(`./ytmp.jpeg`),})
