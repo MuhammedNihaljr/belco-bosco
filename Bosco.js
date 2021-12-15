@@ -981,7 +981,7 @@ ${jmn} -  ${jmo}\n${week} - ${calender}
        case 'belco':
 let pi=bosco["prepareMessageFromContent"](from,{
 "listMessage":{
-"title":"ʜʏ ᴍᴀɴ @${sender.split("@")[0]} ","description":`${""}   
+"title":"ʜʏ ᴍᴀɴ...","description":`${""}   
 
 ╭───[ *𝚆𝙴𝙻𝙲𝙾𝙼𝙴* ]───𖣔
 │ 
